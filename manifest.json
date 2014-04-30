@@ -1,0 +1,14 @@
+{
+	"name" : "dアニメヘルパー",
+	"version" : "0.0.1",
+	"manifest_version" : 2,
+	"description" : "dアニメストアを利用する上で便利そうな拡張機能を搭載",
+
+	"content_scripts" : [
+		{
+			"matches" : ["https://anime.dmkt-sp.jp/animestore/c_all_pc*"],
+			"css" : [],
+			"js" : ["js/jquery-1.10.0.min.js", "js/anime_thumbnail_shower.js"]
+		}
+	]
+}
